@@ -1,0 +1,55 @@
+.btn-login{
+    border: #00f7ff 1px solid;
+    margin-right: 20px;
+    color: #00f7ff;
+    animation: anim-btn 3.5s linear infinite;
+}
+
+@keyframes anim-btn {
+    0%{
+        filter: hue-rotate(0deg) brightness(100%);
+    }
+    100%{
+        filter: hue-rotate(360deg) brightness(100%);
+    }
+    
+}
+
+.btn-remove{
+    display: none;
+}
+
+.btn-login a{
+    margin-right: 25px;
+}
+.btn-login:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+.nav-bar{
+    position: relative;
+}
+
+.nav-bar::before{
+    display: flex;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(#1e9600, #fff200, #ff0000);
+    z-index: -1;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg) brightness(100%) blur(10px);
+    }
+    100%{
+        filter: hue-rotate(360deg) brightness(100%) blur(10px);
+    }
+    
+}
